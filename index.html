@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo das Princesas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explore uma coleção mágica de roupas para pequenas princesas">
+    <meta name="keywords" content="menininhas, roupas, vestidos, princesas, kids fashion">
+    <meta name="author" content="Mundo das Princesas">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Mundo das Princesas</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- New Home Section -->
+        <section id="home" class="home-section">
+            <h2>Bem vindo ao Mundo das Princesas</h2>
+            <div class="home-content">
+                <div class="home-text">
+                    <p>Bem-vinda ao Mundo das Princesas, o lugar mágico onde todas as meninas se podem sentir como realeza! A nossa boutique encantadora oferece uma coleção encantadora de roupas concebidas para fazer a sua princesa brilhar de alegria. Desde vestidos rodopiantes a acessórios adoráveis, cada peça é confeccionada com amor e cuidado para fazer sobressair a princesa interior de cada criança. Entre num mundo de fantasia e diversão no Mundo das Princesas, onde os sonhos se tornam realidade para cada pequena princesa!</p>
+                    
+                    <h3>Garantia de Qualidade</h3>
+                    <p>No Mundo das Princesas, a qualidade é a nossa principal prioridade. Utilizamos tecidos macios e de qualidade superior e asseguramos que cada peça é submetida a rigorosos controlos de qualidade. A nossa atenção aos detalhes garante conforto, durabilidade e estilo, dando à sua princesinha o tratamento real que ela merece.</p>
+                    
+                    <h3>Métodos de Pagamento</h3>
+                    <p>Oferecemos uma variedade de métodos de pagamento para sua conveniência. Pode pagar com cartões de crédito, cartões de débito, PayPal, PIX e outras opções de pagamento seguras.</p>
+                    
+                    <h3>Compras Seguras</h3>
+                    <p>A sua segurança é a nossa prioridade. Utilizamos tecnologia de encriptação avançada para garantir que as suas informações pessoais e de pagamento estão sempre protegidas. Compre com confiança no Mundo das Princesas!</p>
+                </div>
+                <div class="home-image">
+                    <img src="img/moana.png" alt="Welcome to Mundo das Princesas">
+                </div>
+            </div>
+        </section>
+    </main>
+        
+    <section id="products" class="products">
+        <aside class="left-section">
+            <section class="filter-section">
+                <h2>Filtre os produtos</h2>
+                <div class="form-group">
+                    <label for="filterName">Nome</label>
+                    <input type="text" id="filterName">
+                </div>
+                <div class="form-group">
+                    <label for="filterSize">Tamanho</label>
+                    <select id="filterSize">
+                        <option value="">Todos</option>
+                        <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="filterPriceRange">Faixa de preço: <span id="priceRangeValue">15 - 300</span></label>
+                    <input type="range" id="filterMinPriceRange" min="15" max="300" step="1" value="15">
+                    <input type="range" id="filterMaxPriceRange" min="15" max="300" step="1" value="300">
+                </div>
+                <button id="applyFilter">Aplicar filtro</button>
+            </section>
+            <section class="form-section">
+                <h2>Adicione as roupas</h2>
+                <form id="clothesForm">
+                    <div class="form-group">
+                        <label for="clothesImage">Imagem da roupa</label>
+                        <input type="file" id="clothesImage" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="clothesName">Nome da roupa</label>
+                        <input type="text" id="clothesName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Tamanho</label>
+                        <select id="size" required>
+                            <option value="PP">PP</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrição</label>
+                        <textarea id="description" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Preço</label>
+                        <input type="number" id="price" min="15" max="300" required>
+                    </div>
+                    <button type="submit">Adicionar roupa</button>
+                    <button id="clearList" class="clear-button">Limpar lista</button>
+                </form>
+            </section>
+        </aside>
+        <section class="clothes-list-section">
+            <h2>Roupas disponíveis</h2>
+            <div id="clothesList" class="clothes-list"></div>
+            <img src="img/ariel.png" alt="Ariel" class="background-image">
+            <img src="img/lilo-and-stitch.png" alt="Lilo and Stitch" class="upper-left-image">
+        </section>
+    </section>
+    <section id="about" class="content-container">
+        <div class="about-us-section">
+            <div class="about-us-image">
+                <img src="img/mulan2.png" alt="About Us Image">
+            </div>
+        <div class="about-us-content">
+            <h2>Sobre nós</h2>
+            <p>Bem-vindo ao Mundo das Princesas! Dedicamo-nos a fornecer roupa da mais alta qualidade para pequenas princesas. A nossa missão é fazer com que cada menina se sinta realeza com a nossa encantadora gama de vestidos, saias e acessórios. Explore a nossa coleção mágica e deixe a sua imaginação voar!</p>
+            <h2>Nossa missão</h2>
+            <p>No Mundo das Princesas, dedicamo-nos a proporcionar uma experiência de compra mágica com uma encantadora coleção de vestuário e acessórios de alta qualidade. A nossa seleção cuidadosa garante que cada peça é confortável, segura e elegante, permitindo que a sua princesinha brilhe de uma forma única. Acreditamos em fomentar a imaginação, a confiança e a alegria através da nossa encantadora gama de produtos, criando momentos de maravilha e felicidade tanto para as crianças como para os pais.</p>
+            <h2>Fale conosco</h2>
+            <div class="social-media-icons">
+                <a href="https://github.com/Paulo0332" target="_blank">
+                    <img src="img/github-icon.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="https://www.whatsapp.com/?l=pt_br" target="_blank">
+                    <img src="img/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="img/instagram-icon.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="img/facebook-icon.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="mailto:paulovitor.lavinas@gmail.com" target="_blank">
+                    <img src="img/gmail-icon.png" alt="Gmail" class="social-icon">
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <p>&copy; 2024 Mundo das Princesas. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

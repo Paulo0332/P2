@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.main-header {
+    background-color: #ffcccb;
+    text-align: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header h1 {
+    font-family: 'Lobster Two', cursive;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: #ff9999;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 60px; /* Adjust this based on header height */
+    z-index: 999;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff5cc0;
+}
+
+main {
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+/* Home Section Styles */
+.home-section {
+    background-color: #fff4f3;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.home-section h2 {
+    font-family: 'Lobster Two', cursive;
+    margin-bottom: 10px;
+}
+
+.home-section h3 {
+    font-family: 'Lobster Two', cursive;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.home-section p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify; /* Added to justify the text */
+    max-width: 1000px;
+}
+
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-image {
+    max-width: 500px;
+}
+
+.home-image img {
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.left-section {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.products{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Pacifico', cursive;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff9999;
+    border: none;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+}
+
+button:hover {
+    background-color: #ffcccb
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.clear-button {
+    padding: 10px 20px;
+    margin: 14px;
+    background-color: #ffcccb;
+    border: none;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    margin-top: 10px;
+}
+
+.clear-button:hover {
+    background-color: #ff9999;
+}
+
+.clothes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.clothes-list-section {
+    position: relative;
+    flex: 3;
+}
+
+.background-image {
+    position: fixed; /* Fixed position so it stays in the same place when scrolling */
+    bottom: 0;
+    right: 0;
+    opacity: 0.7; /* Adjust the opacity as desired (0.7 for 70% translucent) */
+    z-index: -1; /* Ensures the image is behind other content */
+}
+
+.upper-left-image {
+    position: fixed; /* Fixed position so it stays in the same place when scrolling */
+    top: 10%;
+    max-width: 20%;
+    left: 0;
+    opacity: 0.7; /* Adjust the opacity as desired (0.7 for 70% translucent) */
+    z-index: -1; /* Ensures the image is behind other content */
+}
+
+
+.clothes-item {
+    background-color: #fff4f3;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.clothes-item img {
+    max-width: 100%;
+    max-height: 200px; /* Set a max height for uniformity */
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 10px;
+}
+
+.clothes-item h3 {
+    font-family: 'Lobster Two', cursive;
+    margin-top: 10px;
+}
+
+.clothes-item p {
+    font-family: Arial, sans-serif;
+    margin: 5px 0;
+}
+
+.content-container {
+    padding: 20px; /* Same padding as home content */
+}
+
+.about-us-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff4f3;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.about-us-image {
+    max-width: 450px;
+    margin-right: 20px;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-us-content {
+    flex: 1;
+    max-width: 1000px;
+    margin-left: auto;
+}
+
+.about-us-content h2 {
+    font-family: 'Lobster Two', cursive;
+    margin-bottom: 10px;
+}
+
+.about-us-content p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.3);
+}
+
+.main-footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 0.5px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Lobster Two', cursive;
+    font-size: 18px;
+    color: #333;
+}
